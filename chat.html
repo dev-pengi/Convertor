@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="imgs/icon.png"> -->
+    <title>Convertor</title>
+    <!-- import javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- import css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="/public/css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Convertor</h1>
+    </header>
+
+    <main>
+        <div class="max-width">
+
+            <div class="select unselectable" id="units_type" data-value="none">
+                <div role="button" class="select-dropdown__button ">
+                    <span class="placeholder">Select units type..</span>
+                    <i class="fa-solid fa-angle-down close_dd"></i>
+                </div>
+                <ul class="select-dropdown__list">
+                </ul>
+            </div>
+
+            <div class="units">
+                <div class="box left">
+                    <h2>From</h2>
+                    <div class="select unselectable" id="from_unit" data-value="none">
+                        <div role="button" class="select-dropdown__button ">
+                            <span class="placeholder">Select unit..</span>
+                            <i class="fa-solid fa-angle-down close_dd"></i>
+                        </div>
+                        <ul class="select-dropdown__list">
+                            <li class="select-item disabled">
+                                Please select units type
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="text" id="amount" placeholder="Amount" autofocus>
+                    <div class="convert btn" id="convert">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        <p>Convert</p>
+                    </div>
+                    <p class="error_box" id="error_box"></p>
+                </div>
+                <div class="box right">
+                    <h2>To</h2>
+                    <div class="select unselectable" id="to_unit" data-value="none">
+                        <div role="button" class="select-dropdown__button">
+                            <span class="placeholder">Select unit..</span>
+                            <i class="fa-solid fa-angle-down close_dd"></i>
+                        </div>
+                        <ul class="select-dropdown__list">
+                            <li class="select-item disabled">
+                                Please select units type
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="number" placeholder="Result" id="result" readonly autofocus autocomplete="false">
+                    <div class="reset btn" id="reset">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <p>Reverse</p>
+                    </div>
+                    <p class="error_box" id="error_box"></p>
+                </div>
+            </div>
+    </main>
+
+    <script src="/public/js/vars.js"></script>
+    <script src="/public/js/main.js"></script>
+    <script src="/public/js/conv.js"></script>
+
+</body>
+
+</html>
