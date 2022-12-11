@@ -1,4 +1,4 @@
-# Units convertor
+## Units convertor
 
 > a simple units convertor website made by me written in html, css, javascript
 
