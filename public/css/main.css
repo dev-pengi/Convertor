@@ -47,8 +47,8 @@ input[type=number] {
 
 :root {
     --white: rgb(228, 228, 228);
-    --secondary: #1e549f;
-    --blue: #1e549f;
+    --secondary: #3e82e2;
+    --blue: #3e82e2;
     --purple: #6f42c1;
     --dark: #212529;
     --gray: #6c757d;
