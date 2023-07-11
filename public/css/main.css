@@ -53,14 +53,8 @@ input[type=number] {
 
 body {
     background-color: var(--dark);
-    /* min-height: 100vh;  */
     overflow-x: hidden;
     font-family: 'Open Sans', 'Ubuntu';
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw; */
 }
 
 ::-moz-selection {
